@@ -25,12 +25,28 @@ app.use(express.static(`${__dirname}/public`));// we can same with path module
 app.get('/', (req, res)=>{
     res.render('index');
 });
+// app.get('/success', (req, res)=>{
+//     res.render('success');
+// });
 
 app.post('/charge', (req, res)=>{
     const amount = 2500;
     // https://www.npmjs.com/package/express-handlebars
-    console.log(req.body);
-    res.send('test');
+    // console.log(req.body);
+    // res.send('test');
+    stripe.customers.create({
+        email: req.body.stripeEmail,
+        source: req.body.stripeToken
+    })
+    .then(customer => stripe.charges.create({
+        amount,
+        description: "Web development ebook",
+        currency: "usd",
+        customer: customer.id
+    }))
+    .then(charge => res.render('success'));
+
+
 });
 
 

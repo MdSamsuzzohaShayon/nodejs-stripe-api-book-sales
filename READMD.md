@@ -13,3 +13,11 @@
 as long as we use for test 4242 4242 4242 4242 this number
 rest of the form doesn't metter
 logo for checkout box name must be marketplace.png
+
+# backend sumit
+
+succesfully send with stripe. see in console after submit
+
+create a /charge directory for create and submission
+Submit forms
+check in stripe website there will add some customers and payments
