@@ -38,6 +38,7 @@ heroku create
 
 from heroku dashboad 
  - click app we made -> deploy -> follow the command from there
+```git push heroku master```
 
 
 
