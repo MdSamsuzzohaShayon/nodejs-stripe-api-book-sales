@@ -10,4 +10,6 @@
 
 ## checkout box
 
+as long as we use for test 4242 4242 4242 4242 this number
+rest of the form doesn't metter
 logo for checkout box name must be marketplace.png
