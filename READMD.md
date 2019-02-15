@@ -9,3 +9,5 @@
  - business setting -> data -> delete all test data
 
 ## checkout box
+
+logo for checkout box name must be marketplace.png
