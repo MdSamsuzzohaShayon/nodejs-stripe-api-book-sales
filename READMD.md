@@ -46,8 +46,16 @@ heroku open
 ### if anything wrong
 ``` 
 git logs
-
 ```
+
+## heroku setup
+
+ - dashboard-> payments-> setting -> reveal config vars
+### set publishable key and secret key
+ - key ```STRIPE_PUBLISHABLE_KEY```
+ - value```pk_test_6LkmCRQACKmXir448eUjc2AW```
+ - key ```STRIPE_SECRET_KEY```
+ - value```sk_test_T7IlrPhRmz348L5V5kN5tEB2```
 
 
 
