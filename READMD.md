@@ -24,4 +24,22 @@ check in stripe website there will add some customers and payments
 
 ## deploy in heroku
 
+[download Heroku cli](https://devcenter.heroku.com/articles/heroku-cli)
+install it on local machine
+
+## heroku commands
+
+open git bash in root folder and paste the command
+or open cmdas admin go to root folder
+```
+heroku login
+heroku create
+```
+
+from heroku dashboad 
+ - click app we made -> deploy -> follow the command from there
+
+
+
+
 
