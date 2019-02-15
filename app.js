@@ -1,6 +1,7 @@
 const express = require('express');
+const keys = require('./config/keys');
 // when i log in i will get the key from docs https://stripe.com/docs/quickstart
-const stripe = require('stripe')('sk_test_T7IlrPhRmz348L5V5kN5tEB2');
+const stripe = require('stripe')(keys.stripeSecretKey);
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 
@@ -23,7 +24,9 @@ app.use(express.static(`${__dirname}/public`));// we can same with path module
 
 
 app.get('/', (req, res)=>{
-    res.render('index');
+    res.render('index', {
+        stripePublishableKey: keys.stripePublishableKey
+    });
 });
 // app.get('/success', (req, res)=>{
 //     res.render('success');
